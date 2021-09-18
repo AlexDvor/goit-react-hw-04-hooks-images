@@ -7,6 +7,7 @@ export class Searchbar extends Component {
 
   handleChange = e => {
     const value = e.target.value;
+
     this.setState({
       name: value,
     });
