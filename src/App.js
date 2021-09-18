@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 // Components
 import ImageGallery from './components/ImageGallery/ImageGallery';
-import { Searchbar } from './components/Searchbar/Searchbar';
+import Searchbar from './components/Searchbar/Searchbar';
 import LoadMoreButton from './components/Button/Button';
 import Spinner from './components/Loader/Loader';
 import Modal from './components/Modal/Modal';
