@@ -40,7 +40,7 @@ export default function App() {
   };
 
   const closeModal = () => {
-    setImages(null);
+    setSelectImage(null);
   };
 
   const handleSelectImg = url => {
