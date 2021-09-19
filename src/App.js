@@ -44,15 +44,9 @@ export default function App() {
   };
 
   const handleSelectImg = url => {
-    // this.setState({
-    //   selectImage: url,
-    // });
-
     setSelectImage(url);
   };
 
-  // const { loading, images, selectImage, queryName } = this.state;
-  // const { clickMoreBtn, getQueryValue, handleSelectImg } = this;
   return (
     <>
       <Searchbar onSubmit={getQueryValue}></Searchbar>
