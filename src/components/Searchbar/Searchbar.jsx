@@ -10,7 +10,7 @@ export default function Searchbar({ onSubmit }) {
 
   const handleSubmitForm = e => {
     e.preventDefault();
-    if (name !== '') {
+    if (name) {
       onSubmit(name);
     }
   };

@@ -1,4 +1,4 @@
-async function fetchImages(nameImg, pageNumber) {
+async function FetchImages(nameImg, pageNumber) {
   const URL = 'https://pixabay.com/api';
   const KEY = '22579303-973b9b71134c76d3c38c0933d';
 
@@ -12,8 +12,4 @@ async function fetchImages(nameImg, pageNumber) {
   });
 }
 
-const Api = {
-  fetchImages,
-};
-
-export default Api;
+export default FetchImages;

@@ -6,7 +6,7 @@ import LoadMoreButton from './components/Button/Button';
 import Spinner from './components/Loader/Loader';
 import Modal from './components/Modal/Modal';
 // utils
-import Api from './utils/fetchImage';
+import FetchImages from './utils/fetchImage';
 import { scroll } from './utils/scroll';
 
 export default function App() {
@@ -19,7 +19,7 @@ export default function App() {
   useEffect(() => {
     if (queryName === '') return;
     setLoading(true);
-    Api.fetchImages(queryName, page)
+    FetchImages(queryName, page)
       .then(res => setImages(prevState => [...prevState, ...res.hits]))
       .then(() => {
         if (page > 1) {
